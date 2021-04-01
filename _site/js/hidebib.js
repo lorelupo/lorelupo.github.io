@@ -12,6 +12,19 @@ function hideallbibs()
     }
 }
 
+function hideallabs()
+{
+    var el = document.getElementsByTagName("div") ;
+    for (var i = 0 ; i < el.length ; ++i) {
+        if (el[i].className == "paper") {
+            var abs = el[i].getElementsByTagName("i") ;
+            if (abs.length > 0) {
+                abs [0] .style.display = 'none' ;
+            }
+        }
+    }
+}
+
 function togglebib(paperid)
 {
     var paper = document.getElementById(paperid) ;
