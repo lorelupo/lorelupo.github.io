@@ -111,9 +111,39 @@
 <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
 
   <tr>
-    <td width="33%" valign="top" align="center"><a target="_blank" href="http://proceedings.mlr.press/v97/papini19a/papini19a.pdf"><img src="images/optimist.png" alt="sym" width="100%" style="border-style: none"></a>
+    <td width="33%" valign="top" align="center"><a target="_blank" href="https://arxiv.org/abs/2103.17151"><img src="images/multienc.jpeg" alt="sym" width="100%" style="border-style: none"></img>
     <td width="67%" valign="top">
-      <p><a target="_blank" href="http://proceedings.mlr.press/v97/papini19a/papini19a.pdf" id="OPTIMIST">
+      <p><a target="_blank" href="https://arxiv.org/abs/2103.17151" id="SPLIT">
+      <!-- <img src="images/new.png" alt="[NEW]" width="6%" style="border-style: none"> -->
+      <heading>Divide and Rule: Training Context-Aware Multi-Encoder Translation Models with Little Resources</heading></a><br>
+      <strong>Lorenzo Lupo</strong>, Marco Dinarelli, Laurent Besacier<br>
+      <em>arXiv</em>, 2021
+      <br></p>
+  
+      <div class="paper" id="split">
+        <a target="_blank" href="https://arxiv.org/pdf/2103.17151.pdf">pdf</a> | 
+        <a href="javascript:toggleblock('split_abs')">abstract</a>  |
+        <a shape="rect" href="javascript:togglebib('split')" class="togglebib">bibtex</a>
+        <p align="justify"> <i id="split_abs">Multi-encoder models are a broad family of context-aware Neural Machine Translation (NMT) systems that aim to improve translation quality by encoding document-level contextual information alongside the current sentence. The context encoding is undertaken by contextual parameters, trained on document-level data. In this work, we show that training these parameters takes large amount of data, since the contextual training signal is sparse. We propose an efficient alternative, based on splitting sentence pairs, that allows to enrich the training signal of a set of parallel sentences by breaking intra-sentential syntactic links, and thus frequently pushing the model to search the context for disambiguating clues. We evaluate our approach with BLEU and contrastive test sets, showing that it allows multi-encoder models to achieve comparable performances to a setting where they are trained with x10 document-level data. We also show that our approach is a viable option to context-aware NMT for language pairs with zero document-level parallel data.</i></p>
+        <pre xml:space="preserve">
+          @misc{lupo2021divide,
+            title={Divide and Rule: Training Context-Aware Multi-Encoder Translation Models with Little Resources}, 
+            author={Lorenzo Lupo and Marco Dinarelli and Laurent Besacier},
+            year={2021},
+            eprint={2103.17151},
+            archivePrefix={arXiv},
+            primaryClass={cs.CL}
+          }     
+        </pre>
+      </div>
+    </td>
+  </tr>
+
+
+  <tr>
+    <td width="33%" valign="top" align="center"><a target="_blank" href="http://proceedings.mlr.press/v97/papini19a"><img src="images/optimist.png" alt="sym" width="100%" style="border-style: none"></a>
+    <td width="67%" valign="top">
+      <p><a target="_blank" href="http://proceedings.mlr.press/v97/papini19a" id="OPTIMIST">
       <!-- <img src="images/new.png" alt="[NEW]" width="6%" style="border-style: none"> -->
       <heading>Optimistic Policy Optimization via Multiple Importance Sampling</heading></a><br>
       Matteo Papini, Alberto Metelli, <strong>Lorenzo Lupo</strong>, Marcello Restelli<br>
@@ -146,7 +176,7 @@
       </div>
     </td>
   </tr> 
- 
+
 </table>
 
 <script xml:space="preserve" language="JavaScript">
