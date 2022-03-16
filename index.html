@@ -79,7 +79,7 @@
     <td width="67%" valign="middle" align="justify">
     <p>I'm a PhD student in natural language processing at Université Grenoble-Alpes,
       team <a target="_blank" href="https://lig-getalp.imag.fr/">GETALP</a>. I currently focus on 
-    context-aware neural machine translation to bridge the gap between machine and human translators.
+    context-aware neural machine translation, aiming to bridge the gap between machine and human translators.
     <a target="_blank" href="http://lig-membres.imag.fr/besacier/">Laurent Besacier</a> and
     <a target="_blank" href="http://www.marcodinarelli.it/">Marco Dinarelli</a> supervise and support me along this journey.<p>
     <p align=center>
@@ -158,25 +158,23 @@
     <td width="67%" valign="top">
       <p><a target="_blank" href="https://arxiv.org/abs/2103.17151" id="SPLIT">
       <!-- <img src="images/new.png" alt="[NEW]" width="6%" style="border-style: none"> -->
-      <heading>Divide and Rule: Training Context-Aware Multi-Encoder Translation Models with Little Resources</heading></a><br>
+      <heading>Divide and Rule: Effective Pre-Training for Context-Aware Multi-Encoder Translation Models</heading></a><br>
       <strong>Lorenzo Lupo</strong>, Marco Dinarelli, Laurent Besacier<br>
-      <em>arXiv</em>, 2021
+      <em>ACL</em>, 2022
       </p>
   
       <div class="paper" id="split">
         <a target="_blank" href="https://arxiv.org/pdf/2103.17151.pdf">pdf</a> | 
         <a href="javascript:toggleblock('split_abs')">abstract</a>  |
         <a shape="rect" href="javascript:togglebib('split')" class="togglebib">bibtex</a>
-        <p align="justify"> <i id="split_abs">GNEEE Multi-encoder models are a broad family of context-aware Neural Machine Translation (NMT) systems that aim to improve translation quality by encoding document-level contextual information alongside the current sentence. The context encoding is undertaken by contextual parameters, trained on document-level data. In this work, we show that training these parameters takes large amount of data, since the contextual training signal is sparse. We propose an efficient alternative, based on splitting sentence pairs, that allows to enrich the training signal of a set of parallel sentences by breaking intra-sentential syntactic links, and thus frequently pushing the model to search the context for disambiguating clues. We evaluate our approach with BLEU and contrastive test sets, showing that it allows multi-encoder models to achieve comparable performances to a setting where they are trained with x10 document-level data. We also show that our approach is a viable option to context-aware NMT for language pairs with zero document-level parallel data.</i></p>
+        <p align="justify"> <i id="split_abs">Multi-encoder models are a broad family of context-aware neural machine translation systems that aim to improve translation quality by encoding document-level contextual information alongside the current sentence. The context encoding is undertaken by contextual parameters, trained on document-level data. In this work, we discuss the difficulty of training these parameters effectively, due to the sparsity of the words in need of context (i.e., the training signal), and their relevant context. We propose to pre-train the contextual parameters over split sentence pairs, which makes an efficient use of the available data for two reasons. Firstly, it increases the contextual training signal by breaking intra-sentential syntactic relations, and thus pushing the model to search the context for disambiguating clues more frequently. Secondly, it eases the retrieval of relevant context, since context segments become shorter. We propose four different splitting methods, and evaluate our approach with BLEU and contrastive test sets. Results show that it consistently improves learning of contextual parameters, both in low and high resource settings. </i></p>
         <pre xml:space="preserve">
-          @misc{lupo2021divide,
-            title={Divide and Rule: Training Context-Aware Multi-Encoder Translation Models with Little Resources}, 
-            author={Lorenzo Lupo and Marco Dinarelli and Laurent Besacier},
-            year={2021},
-            eprint={2103.17151},
-            archivePrefix={arXiv},
-            primaryClass={cs.CL}
-          }     
+          @article{lupo2021divide,
+            title={Divide and Rule: Training Context-Aware Multi-Encoder Translation Models with Little Resources},
+            author={Lupo, Lorenzo and Dinarelli, Marco and Besacier, Laurent},
+            journal={arXiv preprint arXiv:2103.17151},
+            year={2021}
+          } 
         </pre>
       </div>
     </td>
