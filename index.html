@@ -15,7 +15,7 @@
   }
   body,td,th {
     font-family: 'Titillium Web', Verdana, Helvetica, sans-serif;
-    font-size: 16px;
+    font-size: 12px;
     font-weight: 400
   }
   heading {
@@ -59,54 +59,39 @@
 </head>
 
 <body>
-<table width="840" border="0" align="center" border="0" cellspacing="0" cellpadding="10">
-  <tr><td>
+  <table width="840" border="0" align="center" border="0" cellspacing="0" cellpadding="10">
+    <tr>
+      <td>
+        <table width="100%" align="center" border="0" cellspacing="0" cellpadding="10">
+            <td width="67%" valign="middle" align="justify">
+              <p align="center"><font size="7">Lorenzo Lupo</font><br>
+                <b>Email</b>:
+                <font id="email" style="display:inline;">
+                  <noscript><i>Please enable Javascript to view</i></noscript>
+                </font>
+                <script>
+                  emailScramble = new scrambledString(document.getElementById('email'),
+                      'emailScramble', 'pnzerl-@eioroapbennf-soevullrugo.l.',
+                      [10, 4, 5, 30, 2, 8, 26, 12, 25, 15, 22, 34, 6, 27, 29, 23, 20, 14, 21, 33, 17, 31, 1, 3, 16, 9, 24, 0, 19, 13, 18, 11, 7, 28, 32]);
+                  </script>
+              <p>I'm a PhD student in natural language processing at Université Grenoble-Alpes,
+                team <a target="_blank" href="https://lig-getalp.imag.fr/">GETALP</a>. I currently focus on 
+              context-aware neural machine translation, aiming to bridge the gap between machine and human translators.
+              <a target="_blank" href="http://lig-membres.imag.fr/besacier/">Laurent Besacier</a> and
+              <a target="_blank" href="http://www.marcodinarelli.it/">Marco Dinarelli</a> supervise and support me along this journey.<p>
+              <p align=center>
+              <a target="_blank" href="Lorenzo_Lupo_CV.pdf">CV</a> | 
+              <a target="_blank"href="https://www.linkedin.com/in/lupo-lorenzo/?originalSubdomain=it"> LinkedIn </a>|
+              <a target="_blank" href="http://www.github.com/lorelupo"> github </a>
+              </p>
+            </td>
+            <td width="25%"><a target="_blank" href="images/rafael_valle.png"><img src="images/lorenzo_lupo.jpeg" width="100%"></a></td>
+        </table>
 
-<table width="100%" align="center" border="0" cellspacing="0" cellpadding="10">
-  <p align="center"><font size="7">Lorenzo Lupo</font><br>
-    <b>Email</b>:
-    <font id="email" style="display:inline;">
-      <noscript><i>Please enable Javascript to view</i></noscript>
-    </font>
-    <script>
-      emailScramble = new scrambledString(document.getElementById('email'),
-          'emailScramble', 'pnzerl-@eioroapbennf-soevullrugo.l.',
-          [10, 4, 5, 30, 2, 8, 26, 12, 25, 15, 22, 34, 6, 27, 29, 23, 20, 14, 21, 33, 17, 31, 1, 3, 16, 9, 24, 0, 19, 13, 18, 11, 7, 28, 32]);
-      </script>
-  </p>
 
-  <tr>
-    <td width="67%" valign="middle" align="justify">
-    <p>I'm a PhD student in natural language processing at Université Grenoble-Alpes,
-      team <a target="_blank" href="https://lig-getalp.imag.fr/">GETALP</a>. I currently focus on 
-    context-aware neural machine translation, aiming to bridge the gap between machine and human translators.
-    <a target="_blank" href="http://lig-membres.imag.fr/besacier/">Laurent Besacier</a> and
-    <a target="_blank" href="http://www.marcodinarelli.it/">Marco Dinarelli</a> supervise and support me along this journey.<p>
-    <p align=center>
-    <a target="_blank" href="Lorenzo_Lupo_CV.pdf">CV</a> | 
-    <a target="_blank"href="https://www.linkedin.com/in/lupo-lorenzo/?originalSubdomain=it"> LinkedIn </a>|
-    <a target="_blank" href="http://www.github.com/lorelupo"> github </a>
-    </p>
-    </td>
-
-    <td width="33%"><a target="_blank" href="images/rafael_valle.png"><img src="images/lorenzo_lupo.jpeg" width="90%"></a></td>
-  </tr>
-</table>
-
-<!-- <table width="100%" align="center" border="0" cellspacing="0" cellpadding="10">
-  <tr><td>
-    <sectionheading>News</sectionheading>
-    <ul>     
-    <li> <a href="#BUONANUOVA">Paper</a> ficoooooooooooooooooooo. </li>
-    <li> <a href="#BUONANUOVA2">Paper</a> ficoooooooooooooooooooo2. </li>
-
-    </ul>
-  </td></tr>
-</table> -->
-
-<table width="100%" align="center" border="0" cellspacing="0" cellpadding="10">
-  <tr><td><sectionheading>Talks</sectionheading></td></tr>
-</table>
+    <table width="100%" align="center" border="0" cellspacing="0" cellpadding="10">
+      <tr><td><sectionheading>Talks</sectionheading></td></tr>
+    </table>
 <table width="100%" align="center" border="0" cellspacing="0" cellpadding="10">
 
   <tr>
@@ -214,9 +199,23 @@
           }     
         </pre>
       </div>
-    </td>
-  </tr> 
+      </td>
 
+      <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+        <tbody>
+          <tr>
+            <td style="padding:0px">
+              <br>
+              <p style="text-align:right;font-size:small;">
+                The code for this page is available <a href="https://github.com/lorelupo/lorelupo.github.io">here</a>. <br>
+                Credits to <a href="https://jonbarron.info/">Jon Barron</a> for the template.
+              </p>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+
+  </tr> 
 
 </table>
 
